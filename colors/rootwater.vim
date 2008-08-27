@@ -1,9 +1,7 @@
-    " vim:set ts=8 sts=2 sw=2 tw=0:
-    "
 " Name: rootwater.vim
 " Maintainer:	Kojo Sugita
-" Last Change:  2008-03-22
-" Revision: 1.0
+" Last Change:  2008-08-26
+" Revision: 1.1
 "
 set background=dark
 hi clear
@@ -53,7 +51,7 @@ hi Special	guifg=pink			gui=none
 hi StatusLine	guifg=#88ee99	guibg=black	gui=none
 hi StatusLineNC	guifg=#446644	guibg=black	gui=none
 
-hi Title	guifg=#77dd88	guibg=#223322	gui=bold
+hi Title	guifg=#88ee99	guibg=#000000	gui=none
 hi Visual	guifg=#77dd88	guibg=#448844	gui=none
 hi VisualNOS	guifg=#55af66	guibg=black
 hi WarningMsg	guifg=#77dd88	guibg=black
@@ -76,8 +74,11 @@ hi PreProc	guifg=lightred			gui=none
 hi Type		guifg=white			gui=none
 hi Underlined	guifg=gray			gui=underline
 hi Error	guifg=red			guibg=black
-hi Todo		guifg=#c0c0c0	guibg=#55af66	gui=none
+hi Todo		guifg=pink	guibg=black	gui=none
 hi SignColumn   guibg=#151b1d
+
+" Matches
+hi MatchParen	guifg=#000000	guibg=#ffaa33
 
 " Pmenu
 if version >= 700
@@ -89,3 +90,7 @@ if version >= 700
   hi TabLineFill  guibg=#232729	guibg=#232729	gui=None
   hi TabLineSel	  guifg=#88ee99	guibg=black	gui=None
 endif
+
+finish
+
+" vim:set ts=8 sts=2 sw=2 tw=0:
